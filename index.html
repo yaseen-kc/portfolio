@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/font-awesome.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="icon" href="images/favicon.png" />
+  <title>yaseen.kc</title>
+</head>
+
+<body>
+  <!--! Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h3 class="fw-bold">yaseen.kc</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#expertise">Expertise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#newsletter">Newsletter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Social</a>
+          </li>
+        </ul>
+        <span class="nav-item">
+          <span class="fa-stack">
+            <a href="https://github.com/yaseen-kc" target="_blank">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fa-brands fa-github fa-stack-1x text-white"></i>
+            </a>
+          </span>
+          <span class="fa-stack">
+            <a href="https://www.linkedin.com/in/muhammedyaseenkc/" target="_blank">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fa-brands fa-linkedin fa-stack-1x text-white"></i>
+            </a>
+          </span>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!--! Header -->
+  <header class="header position-relative">
+    <img src="images/vertical-decoration-left.svg" alt=""
+      class="vertical-decoration position-absolute d-none d-md-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 pt-5">
+          <h1 class="xl-text mt-5">
+            Muhammed Yaseen K C
+            <span class="text-primary fw-bold replace-me">
+              Web Developer, React Dev, Engineer
+            </span>
+          </h1>
+          <p class="lead">
+            I'm a self-taught web developer who wants to make a career out of it. I have excellent technical abilities,
+            especially in the React framework.
+          </p>
+          <a href="#" class="btn btn-primary text-white">Know More</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!--! Form Area -->
+  <section id="contact" class="contact my-7">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="fw-bold">Education</h2>
+          <hr class="hr-heading">
+          <ul class="list-unstyled lh-lg">
+            <li class="d-flex align-items-center">
+              <i class="fas fa-check text-primary mx-3"></i>
+              <div>
+                <strong>Mar Athanasius College of Engineering:</strong>
+                <br>
+                I pursued a Bachelor of Technology (BTech)
+                degree in Computer Science, where I gained a comprehensive understanding of computer systems,
+                programming languages, and software development methodologies.
+              </div>
+            </li>
+            <li class="d-flex align-items-center pt-3">
+              <i class="fas fa-check text-primary mx-3"></i>
+              <div>
+                <strong>Seethi Sahib Memorial Polytechnic College: </strong>
+                <br>
+                I pursued a diploma in computer
+                engineering, a program that provided me with a practical and hands-on education in the foundational
+                aspects of computer systems and engineering principles.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 offset-md-1">
+          <form action="https://formspree.io/f/mknlarjw" method="POST">
+            <div class="mb-4">
+              <input name="text" type="text" class="form-control bg-secondary"
+                onkeydown="return /[a-zA-Z _]/i.test(event.key)" placeholder="Enter Name" required>
+            </div>
+            <div class="mb-4">
+              <input name="email" type="email" class="form-control bg-secondary" placeholder="Enter Email" required>
+            </div>
+            <div class="mb-4">
+              <input name="number" type="number" class="form-control bg-secondary" placeholder="Enter Phone" required>
+            </div>
+            <div class="mb-4">
+              <input name="text" type="text" class="form-control bg-secondary pb-7" placeholder="Enter Message"
+                required>
+            </div>
+            <div class="d-grid gap-2">
+              <input name="submit" type="submit" value="Submit" class="btn btn-primary text-white" required>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--! Expertise -->
+  <section id="expertise" class="expertise bg-secondary py-5 my-6">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
+          <h5>
+            <span class="badge bg-primary rounded-0 text-uppercase">Expertise</span>
+          </h5>
+          <h2 class="fw-bold">Things i know</h2>
+        </div>
+      </div>
+
+      <!-- Expertise Row 1 -->
+      <div class="row pb-5">
+        <div class="col-md-3">
+          <div class="card bg-transparent border-0 text-center mb-3">
+            <div class="card-image">
+              <i class="fa-brands fa-html5 fa-5x text-primary"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">HTML</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-transparent border-0 text-center mb-3">
+            <div class="card-image">
+              <i class="fa-brands fa-css3-alt fa-5x text-primary"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">CSS</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-transparent border-0 text-center mb-3">
+            <div class="card-image">
+              <i class="fa-brands fa-js fa-5x text-primary"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Javascript</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-transparent border-0 text-center mb-3">
+            <div class="card-image">
+              <i class="fa-brands fa-bootstrap fa-5x text-primary"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Bootstrap</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Expertise Row 2 -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card bg-transparent border-0 text-center mb-3">
+            <div class="card-image">
+              <i class="fa-brands fa-sass fa-5x text-primary"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Sass</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-transparent border-0 text-center mb-3">
+            <div class="card-image">
+              <i class="fa-brands fa-node fa-5x text-primary"></i>
+              <i class=""></i>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Node.js</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-transparent border-0 text-center mb-3">
+            <div class="card-image">
+              <i class="fa-brands fa-github fa-5x text-primary"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Github</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-transparent border-0 text-center mb-3">
+            <div class="card-image">
+              <i class="fa-brands fa-react fa-5x text-primary"></i>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Ract</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ! Projects -->
+  <section id="projects" class="projects my-6">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
+          <h5><span class="badge bg-primary rounded-0 text-uppercase">
+              Projects
+            </span></h5>
+          <h2 class="fw-bold">Project's I am Proud Of</h2>
+          <p>We take pride in our successful projects and the value they bring to
+            our clients. With our expertise and dedication, we have delivered
+            exceptional results. Here are some highlights</p>
+        </div>
+      </div>
+      <!--! Projects Row 1 -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card bg-secondary">
+            <a data-bs-toggle="modal" data-bs-target="#modal1">
+              <img src="images/project-1.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <p>
+                  <strong>Facileclass</strong> - Facile Class is an online learning management system.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-secondary">
+            <a data-bs-toggle="modal" data-bs-target="#modal2">
+              <img src="images/project-2.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <p>
+                  <strong>Youtube Clone</strong> - a simple youtube homepage using HTML and CSS
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-secondary">
+            <a data-bs-toggle="modal" data-bs-target="#modal3">
+              <img src="images/project-3.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <p>
+                  <strong>Airbnb Clone</strong> - a simple airbnb homepage using HTML and CSS
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--! Projects Row 2 -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card bg-secondary">
+            <a data-bs-toggle="modal" data-bs-target="#modal4">
+              <img src="images/project-4.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <p>
+                  <strong>Dolla Banking</strong> - Static website for a bank using HTML,CSS and Bootstrap
+
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-secondary">
+            <a data-bs-toggle="modal" data-bs-target="#modal5">
+              <img src="images/project-5.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <p>
+                  <strong>ICIDCA</strong> - Event Website for ICIDCA(23) CUSAT Kochi
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-secondary">
+            <a data-bs-toggle="modal" data-bs-target="#modal6">
+              <img src="images/project-6.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <p>
+                  <strong>Libra</strong> - A complete Library management system software using java
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ! Project Modals -->
+  <div class="project-modals">
+    <!-- ! Modal 1 -->
+    <div id="modal1" class="modal fade">
+      <div class="modal-dialog modal-lg-mt-7">
+        <div class="modal-content bg-secondary p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/project-1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3>Facileclass</h3>
+              <p>
+                Facile Class is an online learning management system. Were we can post and download study materials.
+                Also, submit videos
+              </p>
+              <p>
+                The instructor's login and logout data can be checked by the administrator.
+              </p>
+              <a href="https://github.com/yaseen-kc/Facile-Class" class="btn btn-primary text-white">
+                Details
+              </a>
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! Modal 2 -->
+    <div id="modal2" class="modal fade">
+      <div class="modal-dialog modal-lg-mt-7">
+        <div class="modal-content bg-secondary p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/project-2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3>Youtube Clone</h3>
+              <p>
+                This project is a simple YouTube clone built using HTML and CSS. It aims to replicate the basic layout
+                and styling of the YouTube website, providing a starting point for beginners to practice HTML and CSS
+                skills.
+              </p>
+              <a href="https://yaseen-kc.github.io/youtube.com-clone/" class="btn btn-primary text-white">
+                Details
+              </a>
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! Modal 3 -->
+    <div id="modal3" class="modal fade">
+      <div class="modal-dialog modal-lg-mt-7">
+        <div class="modal-content bg-secondary p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/project-3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3>Airbnb Clone</h3>
+              <p>
+                This project is an Airbnb clone built using HTML and CSS. The goal is to recreate the basic layout and
+                styling of the Airbnb website, providing a practical exercise for HTML and CSS enthusiasts to enhance
+                their skills.
+              </p>
+
+              <a href="https://yaseen-kc.github.io/airbnb-clone/" class="btn btn-primary text-white">
+                Details
+              </a>
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! Modal 4 -->
+    <div id="modal4" class="modal fade">
+      <div class="modal-dialog modal-lg-mt-7">
+        <div class="modal-content bg-secondary p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/project-4.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3>Dolla Banking</h3>
+              <p>
+                A simple banking website using HTML,CSS and Bootstrap
+              </p>
+              <a href="https://yaseen-kc.github.io/dolla-banking/" class="btn btn-primary text-white">
+                Details
+              </a>
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! Modal 5 -->
+    <div id="modal5" class="modal fade">
+      <div class="modal-dialog modal-lg-mt-7">
+        <div class="modal-content bg-secondary p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/project-5.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3>ICIDCA</h3>
+              <p>
+                2023 International Conference on Innovative Data Communication Technologies and Application (ICIDCA)
+              </p>
+              <a href="https://github.com/yaseen-kc/icadcacusat" class="btn btn-primary text-white">
+                Details
+              </a>
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! Modal 6 -->
+    <div id="modal6" class="modal fade">
+      <div class="modal-dialog modal-lg-mt-7">
+        <div class="modal-content bg-secondary p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/project-6.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+              <h3>Libra</h3>
+              <p>
+                A Library Management System made using the concepts of Object Oriented Analysis and Design. Minimal Code
+                is written in the GUI and the entities are decoupled as well. The interface is console based. This
+                project was designed during the course "4136 Application Development using Java"
+              </p>
+              <a href="https://github.com/yaseen-kc/Library-Managemnet-System" class="btn btn-primary text-white">
+                Details
+              </a>
+              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ! News Letter -->
+  <div id="newsletter" class="newsletter my-6">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
+          <h2 class="fw-bold">Subscribe And Follow</h2>
+          <p>
+            Stay updated with our latest news and announcements. Subscribe to our
+            newsletter and follow us on social media for valuable insights and
+            exciting updates.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Enter Email Adress">
+            <button class="btn btn-primary text-white rounded-0" type="button">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ! Footer -->
+  <footer class="footer bg-secondary py-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 my-3">
+          <h6 class="fw-bold">About Me</h6>
+          <p>I'm a self-taught web developer who wants to make a career out of it. I have excellent technical abilities,
+            especially in the React framework.</p>
+        </div>
+        <div class="col-md-4 my-3">
+          <h6 class="fw-bold">Links</h6>
+          <ul class="list-unstyled">
+            <li>
+              Menu: <a href="index.html">Home</a>, <a href="index.html#contact">Contact</a>
+              <a href="index.html#expertise">Expertise</a>
+              <a href="index.html">Projects</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 my-3">
+          <div class="mb-4">
+            <a href="https://github.com/yaseen-kc" class="text-decoration-none">
+              <i class="fa-brands fa-github fa-3x text-light mx-2"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammedyaseenkc/" class="text-decoration-none">
+              <i class="fa-brands fa-linkedin fa-3x text-light mx-2"></i>
+            </a>
+          </div>
+          <p>
+            I would love to hear from you
+            <a href="mailto:ymkcmpd@gmail.com"><strong>ymkcmpd@gmail.com</strong></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ! Back to Top -->
+  <button id="to-top" class="to-top-btn">
+    <img src="images/up-arrow.png" alt="">
+  </button>
+
+  <script src="js/replaceme.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
