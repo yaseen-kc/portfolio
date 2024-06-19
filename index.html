@@ -2,577 +2,1200 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="yaseen kc,muhammed yaseen kc, web developer,mern stack developer " />
-  <meta name="description" content="I'm a self-taught web developer who wants to make a career out of it. I have excellent technical abilities,
-  especially in the React framework." />
-  <meta name="subject" content="Personal Portfolio">
-  <meta name="copyright" content="company name">
-  <meta name="robots" content="index,follow" />
-  <meta name="revised" content="Sunday, Nov 18th, 2023, 5:15 pm" />
-  <meta name="abstract" content="Portfolio">
-  <meta name="topic" content="Portfolio">
-  <meta name="summary" content="Portfolio">
-  <meta name="Classification" content="Personal">
-  <meta name="author" content="yaseen, ymkcmpd.com">
-  <meta name="designer" content="yaseen">
-  <meta name="copyright" content="yaseen">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/font-awesome.css" />
-  <link rel="stylesheet" href="./css/bootstrap.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="icon" href="images/favicon.png" />
-  <title>yaseen.kc</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!--! Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <h3 class="fw-bold">yaseen.kc</h3>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+            </div>
+
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+            </div>
+
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#expertise">Expertise</a>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sacramento, California, USA</address>
+            </div>
+
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#newsletter">Newsletter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#footer">Social</a>
-          </li>
+
         </ul>
-        <span class="nav-item">
-          <span class="fa-stack">
-            <a href="https://github.com/yaseen-kc" target="_blank">
-              <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fa-brands fa-github fa-stack-1x text-dark"></i>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
             </a>
-          </span>
-          <span class="fa-stack">
-            <a href="https://www.linkedin.com/in/muhammedyaseenkc/" target="_blank">
-              <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fa-brands fa-linkedin fa-stack-1x text-dark"></i>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
             </a>
-          </span>
-        </span>
-      </div>
-    </div>
-  </nav>
+          </li>
 
-  <!--! Header -->
-  <header class="header position-relative">
-    <img src="images/vertical-decoration-left.svg" alt="vertical-decoration"
-      class="vertical-decoration position-absolute d-none d-md-block">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 pt-5">
-          <h1 class="xl-text mt-5">
-            Muhammed Yaseen K C
-            <span class="text-primary fw-bold replace-me">
-              Web Developer, React Dev, Engineer
-            </span>
-          </h1>
-          <p class="lead">
-            I'm a self-taught web developer who wants to make a career out of it. I have excellent technical abilities,
-            especially in the React framework.
-          </p>
-          <a href="#" class="btn btn-primary text-dark">Know More</a>
-        </div>
-      </div>
-    </div>
-
-  </header>
-
-  <!--! Form Area -->
-  <section id="contact" class="contact my-7">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="fw-bold">Education</h2>
-          <hr class="hr-heading">
-          <ul class="list-unstyled lh-lg">
-            <li class="d-flex align-items-center">
-              <i class="fas fa-check text-primary mx-3"></i>
-              <div>
-                <strong>Mar Athanasius College of Engineering:</strong>
-                <br>
-                I pursued a Bachelor of Technology (BTech)
-                degree in Computer Science, where I gained a comprehensive understanding of computer systems,
-                programming languages, and software development methodologies.
-              </div>
-            </li>
-            <li class="d-flex align-items-center pt-3">
-              <i class="fas fa-check text-primary mx-3"></i>
-              <div>
-                <strong>Seethi Sahib Memorial Polytechnic College: </strong>
-                <br>
-                I pursued a diploma in computer
-                engineering, a program that provided me with a practical and hands-on education in the foundational
-                aspects of computer systems and engineering principles.
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-5 offset-md-1">
-          <form action="https://formspree.io/f/mknlarjw" method="POST">
-            <div class="mb-4">
-              <input name="text" type="text" class="form-control bg-secondary"
-                onkeydown="return /[a-zA-Z _]/i.test(event.key)" placeholder="Enter Name" required>
-            </div>
-            <div class="mb-4">
-              <input name="email" type="email" class="form-control bg-secondary" placeholder="Enter Email" required>
-            </div>
-            <div class="mb-4">
-              <input name="number" type="number" class="form-control bg-secondary" placeholder="Enter Phone" required>
-            </div>
-            <div class="mb-4">
-              <input name="text" type="text" class="form-control bg-secondary pb-7" placeholder="Enter Message"
-                required>
-            </div>
-            <div class="d-grid gap-2">
-              <input name="submit" type="submit" value="Submit" class="btn btn-primary text-dark" required>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--! Expertise -->
-  <section id="expertise" class="expertise bg-secondary py-5 my-6">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
-          <h5>
-            <span class="badge bg-primary rounded-0 text-uppercase text-dark">Expertise</span>
-          </h5>
-          <h2 class="fw-bold">Things i know</h2>
-        </div>
-      </div>
-
-      <!-- Expertise Row 1 -->
-      <div class="row pb-5">
-        <div class="col-md-3">
-          <div class="card bg-transparent border-0 text-center mb-3">
-            <div class="card-image">
-              <i class="fa-brands fa-html5 fa-5x text-primary"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">HTML</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-transparent border-0 text-center mb-3">
-            <div class="card-image">
-              <i class="fa-brands fa-css3-alt fa-5x text-primary"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">CSS</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-transparent border-0 text-center mb-3">
-            <div class="card-image">
-              <i class="fa-brands fa-js fa-5x text-primary"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Javascript</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-transparent border-0 text-center mb-3">
-            <div class="card-image">
-              <i class="fa-brands fa-bootstrap fa-5x text-primary"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Bootstrap</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Expertise Row 2 -->
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card bg-transparent border-0 text-center mb-3">
-            <div class="card-image">
-              <i class="fa-brands fa-sass fa-5x text-primary"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Sass</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-transparent border-0 text-center mb-3">
-            <div class="card-image">
-              <i class="fa-brands fa-node fa-5x text-primary"></i>
-              <i class=""></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Node.js</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-transparent border-0 text-center mb-3">
-            <div class="card-image">
-              <i class="fa-brands fa-github fa-5x text-primary"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Github</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card bg-transparent border-0 text-center mb-3">
-            <div class="card-image">
-              <i class="fa-brands fa-react fa-5x text-primary"></i>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Ract</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ! Projects -->
-  <section id="projects" class="projects my-6">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
-          <h5><span class="badge bg-primary rounded-0 text-uppercase text-dark">
-              Projects
-            </span></h5>
-          <h2 class="fw-bold">Project's I am Proud Of</h2>
-        </div>
-      </div>
-      <!--! Projects Row 1 -->
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card bg-secondary">
-            <a href="#" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#modal1">
-              <img src="images/project-1.jpg" alt="project-1" class="card-img-top">
-              <div class="card-body">
-                <p>
-                  <strong>Facileclass</strong> - Facile Class is an online learning management system.
-                </p>
-              </div>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
             </a>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card bg-secondary">
-            <a href="#" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#modal2">
-              <img src="images/project-2.jpg" alt="project-2" class="card-img-top">
-              <div class="card-body">
-                <p>
-                  <strong>Youtube Clone</strong> - a simple youtube homepage using HTML and CSS
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card bg-secondary">
-            <a href="#" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#modal3">
-              <img src="images/project-3.jpg" alt="project-3" class="card-img-top">
-              <div class="card-body">
-                <p>
-                  <strong>Airbnb Clone</strong> - a simple airbnb homepage using HTML and CSS
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
+          </li>
+
+        </ul>
+
       </div>
 
-      <!--! Projects Row 2 -->
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card bg-secondary">
-            <a href="#" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#modal4">
-              <img src="images/project-4.jpg" alt="project-4" class="card-img-top">
-              <div class="card-body">
-                <p>
-                  <strong>Dolla Banking</strong> - Static website for a bank using HTML,CSS and Bootstrap
+    </aside>
 
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card bg-secondary">
-            <a href="#" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#modal5">
-              <img src="images/project-5.jpg" alt="project-5" class="card-img-top">
-              <div class="card-body">
-                <p>
-                  <strong>ICIDCA</strong> - Event Website for ICIDCA(23) CUSAT Kochi
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card bg-secondary">
-            <a href="#" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#modal6">
-              <img src="images/project-6.jpg" alt="project-6" class="card-img-top">
-              <div class="card-body">
-                <p>
-                  <strong>Libra</strong> - A complete Library management system software using java
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ! Project Modals -->
-  <div class="project-modals">
-    <!-- ! Modal 1 -->
-    <div id="modal1" class="modal fade">
-      <div class="modal-dialog modal-lg-mt-7">
-        <div class="modal-content bg-secondary p-5">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="images/project-1.jpg" alt="project-1" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-              <h3>Facileclass</h3>
-              <p>
-                Facile Class is an online learning management system. Were we can post and download study materials.
-                Also, submit videos
-              </p>
-              <p>
-                The instructor's login and logout data can be checked by the administrator.
-              </p>
-              <a href="https://github.com/yaseen-kc/Facile-Class" class="btn btn-primary text-white">
-                Details
-              </a>
-              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- ! Modal 2 -->
-    <div id="modal2" class="modal fade">
-      <div class="modal-dialog modal-lg-mt-7">
-        <div class="modal-content bg-secondary p-5">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="images/project-2.jpg" alt="project-2" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-              <h3>Youtube Clone</h3>
-              <p>
-                This project is a simple YouTube clone built using HTML and CSS. It aims to replicate the basic layout
-                and styling of the YouTube website, providing a starting point for beginners to practice HTML and CSS
-                skills.
-              </p>
-              <a href="https://yaseen-kc.github.io/youtube.com-clone/" class="btn btn-primary text-white">
-                Details
-              </a>
-              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- ! Modal 3 -->
-    <div id="modal3" class="modal fade">
-      <div class="modal-dialog modal-lg-mt-7">
-        <div class="modal-content bg-secondary p-5">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="images/project-3.jpg" alt="project-3" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-              <h3>Airbnb Clone</h3>
-              <p>
-                This project is an Airbnb clone built using HTML and CSS. The goal is to recreate the basic layout and
-                styling of the Airbnb website, providing a practical exercise for HTML and CSS enthusiasts to enhance
-                their skills.
-              </p>
 
-              <a href="https://yaseen-kc.github.io/airbnb-clone/" class="btn btn-primary text-white">
-                Details
-              </a>
-              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--
+      - #main-content
+    -->
 
-    <!-- ! Modal 4 -->
-    <div id="modal4" class="modal fade">
-      <div class="modal-dialog modal-lg-mt-7">
-        <div class="modal-content bg-secondary p-5">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="images/project-4.jpg" alt="project-4" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-              <h3>Dolla Banking</h3>
-              <p>
-                A simple banking website using HTML,CSS and Bootstrap
-              </p>
-              <a href="https://yaseen-kc.github.io/dolla-banking/" class="btn btn-primary text-white">
-                Details
-              </a>
-              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="main-content">
 
-    <!-- ! Modal 5 -->
-    <div id="modal5" class="modal fade">
-      <div class="modal-dialog modal-lg-mt-7">
-        <div class="modal-content bg-secondary p-5">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="images/project-5.jpg" alt="project-5" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-              <h3>ICIDCA</h3>
-              <p>
-                2023 International Conference on Innovative Data Communication Technologies and Application (ICIDCA)
-              </p>
-              <a href="https://github.com/yaseen-kc/icadcacusat" class="btn btn-primary text-white">
-                Details
-              </a>
-              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <!--
+        - #NAVBAR
+      -->
 
-    <!-- ! Modal 6 -->
-    <div id="modal6" class="modal fade">
-      <div class="modal-dialog modal-lg-mt-7">
-        <div class="modal-content bg-secondary p-5">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="images/project-6.jpg" alt="project-6" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-              <h3>Libra</h3>
-              <p>
-                A Library Management System made using the concepts of Object Oriented Analysis and Design. Minimal Code
-                is written in the GUI and the entities are decoupled as well. The interface is console based. This
-                project was designed during the course "4136 Application Development using Java"
-              </p>
-              <a href="https://github.com/yaseen-kc/Library-Managemnet-System" class="btn btn-primary text-white">
-                Details
-              </a>
-              <button class="btn btn-light" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <nav class="navbar">
 
-  <!-- ! News Letter -->
-  <div id="newsletter" class="newsletter my-6">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
-          <h2 class="fw-bold">Subscribe And Follow</h2>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
           <p>
-            Stay updated with latest news and announcements. Subscribe to my
-            newsletter and follow me on social media for valuable insights and
-            exciting updates.
+            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
           </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center">
-          <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="Enter Email Address">
-            <button class="btn btn-primary text-dark rounded-0" type="button">
-              Submit
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
             </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- ! Footer -->
-  <footer class="footer bg-secondary py-6">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 my-3">
-          <h6 class="fw-bold">About Me</h6>
-          <p>I'm a self-taught web developer who wants to make a career out of it. I have excellent technical abilities,
-            especially in the React framework.</p>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-        <div class="col-md-4 my-3">
-          <h6 class="fw-bold">Links</h6>
-          <ul class="list-unstyled">
-            <li>
-              Menu: <a href="index.html">Home</a>, <a href="index.html#contact">Contact</a>
-              <a href="index.html#expertise">Expertise</a>
-              <a href="index.html">Projects</a>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
             </li>
-          </ul>
-        </div>
-        <div class="col-md-4 my-3">
-          <div class="mb-4">
-            <a href="https://github.com/yaseen-kc" class="text-decoration-none" aria-label="Github ID">
-              <i class="fa-brands fa-github fa-3x text-light mx-2"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/yaseenkc/" class="text-decoration-none" aria-label="linkedin ID">
-              <i class="fa-brands fa-linkedin fa-3x text-light mx-2"></i>
-            </a>
-          </div>
-          <p>
-            I would love to hear from you
-            <a href="mailto:ymkcmpd@gmail.com"><strong>ymkcmpd@gmail.com</strong></a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
 
-  <script src="js/replaceme.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+
+              <span>2007 — 2008</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+
+              <span>2006 — 2007</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+              <span>2002 — 2004</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Creative director</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>

@@ -1,40 +1,44 @@
-# Vera Website
+# vCard - Personal portfolio
 
-Bootstrap Business website for software solutions, but could easily be changed to fit any business. Dark-themed design with modals and other features.
+![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
+![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
+[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
 
-<img src="./images/screen.png" />
+vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
 
-## Features
+## Demo
 
-- Dark design with bright buttons & text for contrast
-- Responsive design
-- Replaceme script for rolling words
-- Navbar scroll effect
-- Styled modals for projects
-- Font awesome icons
+![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
+![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
 
-## Usage
+## Prerequisites
 
-This website is built with [Bootstrap](https://getbootstrap.com/) and [Sass](https://sass-lang.com/). It uses [Font Awesome](https://fontawesome.com/) for icons.
+Before you begin, ensure you have met the following requirements:
 
-In order to customize this website, you need to install [Node.js](https://nodejs.org/en/). Then, clone this repository and run:
+* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
-```bash
-npm install
-```
+## Installing vCard
 
-This will install Bootstrap, Sass and Font Awesome. To build your CSS files from Sass, run:
+To install **vCard**, follow these steps:
 
-```bash
-npm run sass:build
-```
-
-To watch your Sass files for changes, run:
+Linux and macOS:
 
 ```bash
-npm run sass:watch
+sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
 ```
 
-You can add Bootstrap variables to the `bootstrap.scss` file. You can look at the file `node_modules/bootstrap/dist/scss/_variables.scss` for a list of all the variables. Do NOT edit the `variables.scss` file directly, as it will be overwritten when you update Bootstrap.
+Windows:
 
-To add your own custom styles, use the `styles.scss` file.
+```bash
+git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+```
+
+## Contact
+
+If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+
+## License
+
+MIT
